@@ -1,0 +1,67 @@
+.complementoLogo {
+  background: rgb(213, 250, 213);
+  padding-right: 8%;
+}
+.complemento {
+  background: rgb(213, 250, 213);
+  padding-right: 30px;
+}
+
+@media screen and (min-width: 1865px) {
+  
+  img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and ((min-width: 1458px) and (max-width: 1898px)) {
+
+  img {
+    width: 11%;
+    height: 11%;
+  }
+}
+
+@media screen and ((min-width: 1029px) and (max-width: 1457px)) {
+
+  img {
+    width: 10%;
+    height: 10%;
+  }
+}
+
+@media screen and ((min-width: 700px) and (max-width: 1028px)) {
+
+  img {
+    width: 8%;
+    height: 8%;
+  }
+}
+
+@media screen and ((min-width: 300px) and (max-width: 699px)) {
+
+  img {
+    width: 6%;
+    height: 6%;
+  }
+}
+
+
+p {
+  display: block;
+  margin-bottom: 0.5em;
+  margin-left: 2em;
+  margin-right: 0;
+}
+
+.content {
+  border: none;
+  padding: .5em;  
+  white-space: pre-wrap;
+}
+
+.content::-webkit-scrollbar { 
+  display: none;
+}
+

@@ -1,0 +1,56 @@
+.home {
+    display: block;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.home .title {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    padding-left: 10px;
+    
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.divLine {
+    width:90%;
+    word-wrap:break-word;
+    background-color: #dff7df;
+}
+
+.complementoLogo {
+    background: #ffffff;
+    padding-right: 100px;
+}
+
+.complemento {
+    background: #ffffff;
+    padding-right: 50px;
+}
+
+@media screen and (min-width: 1680px) {
+  img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+@media screen and ((min-width: 870px) and (max-width: 1679px)) {
+  img {
+    width: 10%;
+    height: 10%;
+  }
+}
+
+@media screen and ((min-width: 360px) and (max-width: 869px)) {
+  img {
+    width: 5%;
+    height: 5%;
+  }
+}
+
