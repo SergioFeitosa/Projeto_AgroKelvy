@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { Router } from '@angular/router';
 import { Contact } from '../../../components/contact/contact.model';
 import { FormsModule } from '@angular/forms';
+import { ContactCreateComponent } from '../../../components/contact/contact-create/contact-create.component';
 
 @Component({
   standalone:true,
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatButtonModule,
     FormsModule,
+    ContactCreateComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
@@ -25,11 +27,11 @@ import { FormsModule } from '@angular/forms';
 export class ContatoPortugueseComponent implements OnInit {
 
   contact: Contact = {
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-    status: ''
+    name: 'Edson',
+    email: 'edson@teste.com',
+    subject: 'Cotação de serviço',
+    message: 'Boa tarde!!! Gostaria de cotar 25000M de sorgo forragem',
+    status: '1'
 
   }
 

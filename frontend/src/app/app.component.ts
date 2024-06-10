@@ -43,6 +43,7 @@ import { SidebarComponent } from './template/sidebar/sidebar.component';
 })
 
 export class AppComponent {
+  
   title = 'AgroKelvy';
   idiomaActive = 'english';
 

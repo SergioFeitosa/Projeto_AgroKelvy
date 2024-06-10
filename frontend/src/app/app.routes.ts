@@ -256,7 +256,6 @@ import { SojaRRPortugueseComponent } from './views/sojarr/sojarr.portuguese/soja
 import { SojaRREnglishComponent } from './views/sojarr/sojarr.english/sojarr.english.component';
 import { SojaRRChineseComponent } from './views/sojarr/sojarr.chinese/sojarr.chinese.component';
 import { ContactCreateComponent } from './components/contact/contact-create/contact-create.component';
-import { ContactCrudComponent } from './components/contact/contact-crud/contact-crud.component';
 
 export const routes: Routes = [
     {
@@ -265,7 +264,7 @@ export const routes: Routes = [
     },
     {
         path: "contacts",
-        component: ContactCrudComponent,        
+        component: ContactCreateComponent,        
     },
     {
         path: "contacts/create",

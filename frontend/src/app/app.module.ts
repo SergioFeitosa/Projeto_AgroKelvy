@@ -1,3 +1,4 @@
+import { ContactService } from './components/contact/contact.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,20 +17,17 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { NgModule } from '@angular/core';
 
-import { ContactCrudComponent } from './components/contact/contact-crud/contact-crud.component';
 import { ContactCreateComponent } from './components/contact/contact-create/contact-create.component';
 import { ContatoPortugueseComponent } from './views/contato/contato.portuguese/contato.portuguese.component';
 
 
 @NgModule({
     declarations: [
-      ],
+  
+    ],
   imports:      
   [ 
     BrowserModule, 
-    ContactCreateComponent,
-    ContactCrudComponent,
-    ContatoPortugueseComponent,
     FormsModule,
     HttpClientModule,
 
@@ -46,7 +44,6 @@ import { ContatoPortugueseComponent } from './views/contato/contato.portuguese/c
     MatToolbarModule,
     MatSnackBarModule
 ],
-
-providers: [],
+providers: [ContactService],
 })
 export class AppModule { }
