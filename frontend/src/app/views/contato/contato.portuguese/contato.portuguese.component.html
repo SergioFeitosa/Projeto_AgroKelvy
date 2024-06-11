@@ -1,32 +1,31 @@
+    
+    <mat-card  class="formularioContato">
 
-<h1 id="h1Home">Contact</h1>
+        <mat-card-title>Contato</mat-card-title>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <mat-form-field>
+                <input matInput name="name" [(ngModel)]="contact.name" placeHolder="Nome" class="nameLabel">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput name="email" [(ngModel)]="contact.email" placeHolder="Email" class="emailLabel" >
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput name="subject" [(ngModel)]="contact.subject" placeHolder="Subject" class="assuntoLabel" >
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput name="message" [(ngModel)]="contact.message" placeHolder="Message" class="mensagemLabel" >
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput name="status" [(ngModel)]="contact.status" placeHolder="Status" class="statusLabel" >
+            </mat-form-field>
+        </form>
 
+        <button class="btn-envia" mat-raised-button (click)="createContact()">
+            novo contato
+        </button>
 
-<mat-card>
-    <mat-card-title>Novo Contato</mat-card-title>
-    <form>
-        <mat-form-field>
-            <input matInput name="name" [(ngModel)]="contact.name"  placeHolder="Nome" >
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput name="email" [(ngModel)]="contact.email" placeHolder="Email">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput name="subject" [(ngModel)]="contact.subject" placeHolder="Subject">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput name="message" [(ngModel)]="contact.message" placeHolder="Message">
-        </mat-form-field>
-        <mat-form-field>
-            <input matInput name="status" [(ngModel)]="contact.status" placeHolder="Status">
-        </mat-form-field>
-    </form>
-    <button mat-raised-button (click)="createContact()">
-        novo contato
-    </button>
+        <button class="btn-cancel" mat-raised-button (click)="cancel()">
+            Cancelar
+        </button>
 
-    <button mat-raised-button (click)="cancel()">
-        Cancelar
-    </button>
-
-</mat-card>
+    </mat-card>

@@ -16,7 +16,7 @@ public class EmailService {
 	
 	
 	
-	String to = "sergiofeitosa@gmail.com";
+	String to = "sergiofeitosa@live.com";
 	String subject = "teste subject";
 	String body = "teste body";
 	
